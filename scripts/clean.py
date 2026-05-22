@@ -8,7 +8,7 @@ VALID_EVENTS = {
     "logout"
 }
 
-df = pd.read_csv("data/raw/events.csv")
+df = pd.read_csv("./data/raw/events.csv")
 
 df = df.dropna()
 
@@ -49,6 +49,6 @@ df["weekday"] = pd.to_datetime(
 df = df.dropna()
 
 df.to_csv(
-    "data/features/events.csv",
+    "./data/features/events.csv",
     index=False
 )
