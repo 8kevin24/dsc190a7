@@ -12,9 +12,7 @@ def _():
 
 @app.cell
 def _(pd):
-    df = pd.read_csv(
-        "data/features/events.csv"
-    )
+    df = pd.read_csv("data/features/events.csv")
     return df
 
 
