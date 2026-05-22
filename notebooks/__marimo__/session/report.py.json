@@ -1,0 +1,27 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.7",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "4b246857b15f1e1531aca6a3a5562ce6",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "9972835efa3fb841e4edb71ecb16418a",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "c7b0d36cae5a4af13a259846ad65d732",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
