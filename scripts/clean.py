@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+
 os.makedirs("data/clean", exist_ok=True)
 
 VALID_EVENT_TYPES = {
@@ -12,7 +13,6 @@ VALID_EVENT_TYPES = {
 
 df = pd.read_csv("data/raw/events.csv")
 
-# remove empty/whitespace-only cells
 df = df.replace(r"^\s*$", pd.NA, regex=True)
 df = df.dropna()
 
@@ -25,5 +25,7 @@ df["duration_seconds"] = df["duration_seconds"].astype(int)
 
 df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
 df = df.dropna(subset=["timestamp"])
+
+df["timestamp"] = df["timestamp"].dt.strftime("%Y-%m-%dT%H:%M:%S")
 
 df.to_csv("data/clean/events.csv", index=False)
