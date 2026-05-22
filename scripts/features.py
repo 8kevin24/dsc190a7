@@ -1,4 +1,6 @@
 import pandas as pd
+import os
+os.makedirs("data/features", exist_ok=True)
 
 df = pd.read_csv("data/transformed/events.csv")
 

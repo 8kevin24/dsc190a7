@@ -1,4 +1,6 @@
 import pandas as pd
+import os
+os.makedirs("data/transformed", exist_ok=True)
 
 df = pd.read_csv("data/clean/events.csv")
 
